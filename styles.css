@@ -114,11 +114,12 @@ section{
   font-size: 3.0rem;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
-  padding: 0.70rem;
+  width: 5rem;
   border-radius:var(--radius)  ;
   font-weight: 700;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 .time p::before {
   content: '';
@@ -164,7 +165,7 @@ section{
     font-size: 4.50rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    padding: 0.80rem;
+    width: 8rem;
   }
   .attribution { 
     margin-top: 5rem;
