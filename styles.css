@@ -1,0 +1,180 @@
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+    /* colors */
+    --clr-primary-soft-red:  hsl(345, 95%, 68%);
+    --clr-primary-grayish-blue: hsl(237, 18%, 59%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grayish-dark-blue: hsl(235, 16%, 14%);
+    --clr-dark-desaturated-blue: hsl(236, 21%, 26%);
+    --clr-dark-blue:  hsl(234, 17%, 12%);
+    --ff-secondary: "Red Hat Text";
+    --radius: 0.50rem;
+    --max-width: 1170px;
+    --fixed-width: 620px;
+    --transition: all 0.3s linear;
+    --fw-bold: 800;
+    --fw-regular: 500;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-secondary);
+  --spacing: 0.2rem;
+  --radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+
+body {
+  background-image: url(images/bg-stars.svg), url(images/bg-stars.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: var(--ff-secondary);
+  background-color: var(--clr-grayish-dark-blue);
+  line-height: 1.5;
+  font-size: 0.75rem;
+  height: 100vh;
+  
+}
+
+h1{
+  color: var(--clr-white);
+  font-size: 1.80rem;
+  font-weight: normal;
+  width: 90%;
+  text-align: center;
+  padding-top:5rem ;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 0;
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.social img{
+  max-width: 100%;
+}
+.container{
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.time{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.80rem;
+}
+.time p{
+  background-color: var(--clr-dark-desaturated-blue);
+  color: var(--clr-primary-soft-red);
+  font-size: 3.0rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  padding: 0.70rem;
+  border-radius:var(--radius)  ;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.time p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right:  0;
+  top: 50%; 
+  border-top: 0.01rem solid var(--clr-dark-desaturated-blue); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transform-origin: 50% 50%; 
+  transform: scaleY(1.5);
+  z-index: 0;
+}
+.time h4{
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--clr-primary-grayish-blue);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.attribution { 
+  margin-top: 5rem;
+  font-size:  0.80rem;
+  text-align: center; 
+  margin-bottom: 0rem;
+}
+.attribution a { color: hsl(228, 45%, 44%);
+}
+
+/*.top-flip {
+  transform-origin: bottom;
+  transform: rotateX(0deg);
+  animation: flip-top 0.5s ease-in forwards;
+}*/
+@media screen and (min-width: 800px) {
+  h1{
+    font-size: 1.2rem;
+    padding-top:0rem ;
+  }
+  .time p{
+    font-size: 4.50rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0.80rem;
+  }
+  .attribution { 
+    margin-top: 5rem;
+    font-size:  1.80rem;
+    margin-bottom: -10rem;
+  }
+  body {
+    height: 100vh;
+  }
+  section{
+    height: 100%;
+}
+}
