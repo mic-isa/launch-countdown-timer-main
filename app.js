@@ -10,7 +10,7 @@ let tempmonth = tempDate.getMonth();
 
 let tempDay = tempDate.getDate(); 
 
-let futureDate = new Date(tempYear, tempmonth, tempDay + 10, 11, 30, 0);
+let futureDate = new Date(tempYear, tempmonth, tempDay + 9, 11, 30, 0);
 
 let futureTime = futureDate.getTime();
 
@@ -52,7 +52,7 @@ function countDown() {
   time.forEach(function (item, index) {
 
     item.innerHTML = format(values[index]);
-    /*item.classList.add("top-flip")*/
+    
 
   });
 

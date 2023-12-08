@@ -146,16 +146,22 @@ section{
   margin-top: 5rem;
   font-size:  0.80rem;
   text-align: center; 
-  margin-bottom: 0rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  width: 95%;
+ 
 }
 .attribution a { color: hsl(228, 45%, 44%);
 }
 
-/*.top-flip {
-  transform-origin: bottom;
-  transform: rotateX(0deg);
-  animation: flip-top 0.5s ease-in forwards;
-}*/
+.expire {
+  text-transform: uppercase;
+}
+
+
+
 @media screen and (min-width: 800px) {
   h1{
     font-size: 1.2rem;
@@ -168,9 +174,7 @@ section{
     width: 8rem;
   }
   .attribution { 
-    margin-top: 5rem;
     font-size:  1.80rem;
-    margin-bottom: -10rem;
   }
   body {
     height: 100vh;
@@ -179,3 +183,4 @@ section{
     height: 100%;
 }
 }
+
